@@ -45,13 +45,13 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[21px] max-w-6xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I am a Game Developer and a Software Engineering Student. 
+        My greatest strength is my critical and analytical thinking, 
+        which allows me to create relevant solutions to requirements and problems that arise during development. 
+        In addition, I combine my skills with knowledge in Agile methodology, Git, and creating precise instructions for 
+        artificial intelligence, such as GPT, which allows me to be very efficient in my tasks.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
