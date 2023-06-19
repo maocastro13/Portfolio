@@ -20,8 +20,7 @@ import trello from "./tech/trello.png";
 import Python from "./tech/Python.png";
 import pm from "./tech/pm.png";
 import SolidPrinciples from "./tech/SolidPrinciples.png";
-
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
 
 import pp from "./company/pp.png";
 import colapsum from "./company/Colapsum.png";
@@ -54,8 +53,8 @@ export {
   Python,
   SolidPrinciples,
   pm,
-  
   threejs,
+  
   pp,
   colapsum,
   unServer,
