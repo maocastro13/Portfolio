@@ -74,15 +74,15 @@ const technologies = [
       icon: Python,
     },
     {
-      name: "React JS",
+      name: "unity",
       icon: unity,
     },
     {
-      name: "vsc Toolkit",
+      name: "vsc",
       icon: vsc,
     },
     {
-      name: "trello CSS",
+      name: "trello",
       icon: trello,
     },
     {
