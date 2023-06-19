@@ -1,31 +1,45 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { Html, OrbitControls, Preload, useAnimations, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  const [index, setIndex] = useState(2);
+  const computer = useGLTF("./Avatar/MaoAvatarAnimation.glb");
+  const { actions, names } = useAnimations(computer.animations, computer.scene);
+  const [isClicked, setIsClicked] = useState(false);
+
+  useEffect(() => {
+    actions[names[index]]?.reset().fadeIn(0.5).play();
+
+    return () => {
+      actions[names[index]]?.fadeOut(0.5);
+    };
+  }, [index, actions, names]);
 
   return (
-    <mesh>
-      <hemisphereLight intensity={0.15} groundColor='black' />
-      <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={1}
-        castShadow
-        shadow-mapSize={1024}
-      />
-      <pointLight intensity={1} />
-      <primitive
-        object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
-      />
-    </mesh>
+    <group>
+    <primitive
+      object={computer.scene}
+      scale={2}
+      position-y={-2.5}
+      rotation-y={-0.7}
+      position-x={[4.5]}
+    />
+
+    <Html position={[-4.4, 0, 0]}>
+      <button
+        className="font-black text-[#915EFF] lg:text-[60px] sm:text-[40px] xs:text-[30px] text-[20px] lg:leading-[98px] mt-2 w-[100px] p-2 rounded-lg text-xs sm:text-lg sm:w-[500px] hover:bg-white hover:scale-110 duration-500"
+        onClick={() => {
+          setIndex((index + 1) % names.length);
+          setIsClicked(!isClicked);
+        }}
+      >
+        {isClicked ? "Impress Me!" : "I can fly!"}
+      </button>
+    </Html>
+  </group>
   );
 };
 
@@ -54,13 +68,10 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <Canvas
-      frameloop='demand'
-      shadows
-      dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
+    <Canvas dpr={[0, 2]}>
+      <ambientLight intensity={0.5} />
+      <pointLight position={[1, 1, 1]} />
+      <OrbitControls enabled={false} />
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
@@ -69,7 +80,6 @@ const ComputersCanvas = () => {
         />
         <Computers isMobile={isMobile} />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );
