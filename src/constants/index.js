@@ -24,6 +24,10 @@ import {
     jobit,
     tripguide,
     threejs,
+    
+    nico,
+    rodri,
+    linkedin,
 } from "../assets";
   
 export const navLinks = [
@@ -121,39 +125,16 @@ const technologies = [
   
 const experiences = [
     {
-      title: "Spigot Plugin Developer",
-      company_name: "Rol Play server of the Universidad Nacional de Colombia in the video game Minecraft.",
-      icon: unServer,
-      iconBg: "#383E56",
-      date: "September 2022 - March 2023",
-      points: [
-        "I developed plugins using Java, Spigot, Bukkit and YML, optimizing the gameplay mechanics of the server. One of my outstanding achievements was the creation of an item on the server that replicates the functionalities of conventional smartphones. Through this implementation, I managed to provide an intuitive graphical interface for players to easily access the mechanics and interactions needed to enhance their gaming experience.",
-      ],
-    },
-    {
-      title: "Game Programmer and Product Manager",
-      company_name: "Colapsum Studio",
-      icon: colapsum,
-      iconBg: "#1A0C0D",
-      date: "April 2023 - May 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
       title: "Product Manager and Game Developer",
       company_name: "Six Guys Productions",
       icon: sixGuys,
       iconBg: "#000000",
       date: "May 2023 - Actuality",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu nisi diam. Fusce mattis sapien a libero feugiat, ac iaculis enim gravida. Aenean quis nulla massa.",
+        "Nulla tincidunt feugiat tortor, id auctor ligula. Vivamus ut nunc non lacus efficitur bibendum in ut risus.",
+        "Sed rutrum, lorem a aliquam ultricies, dolor arcu viverra massa, at consectetur ipsum neque in justo.",
+        "Mauris vestibulum arcu non fermentum venenatis. Nam pharetra purus id felis porta, vitae laoreet est cursus.",
       ],
     },
     {
@@ -163,10 +144,33 @@ const experiences = [
       iconBg: "#E6DEDD",
       date: "June 03 2023 - June 05 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu nisi diam. Fusce mattis sapien a libero feugiat, ac iaculis enim gravida. Aenean quis nulla massa.",
+        "Nulla tincidunt feugiat tortor, id auctor ligula. Vivamus ut nunc non lacus efficitur bibendum in ut risus.",
+        "Sed rutrum, lorem a aliquam ultricies, dolor arcu viverra massa, at consectetur ipsum neque in justo.",
+        "Mauris vestibulum arcu non fermentum venenatis. Nam pharetra purus id felis porta, vitae laoreet est cursus.",
+      ],
+    },
+    {
+      title: "Game Programmer and Product Manager",
+      company_name: "Colapsum Studio",
+      icon: colapsum,
+      iconBg: "#1A0C0D",
+      date: "April 2023 - May 2023",
+      points: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu nisi diam. Fusce mattis sapien a libero feugiat, ac iaculis enim gravida. Aenean quis nulla massa.",
+        "Nulla tincidunt feugiat tortor, id auctor ligula. Vivamus ut nunc non lacus efficitur bibendum in ut risus.",
+        "Sed rutrum, lorem a aliquam ultricies, dolor arcu viverra massa, at consectetur ipsum neque in justo.",
+        "Mauris vestibulum arcu non fermentum venenatis. Nam pharetra purus id felis porta, vitae laoreet est cursus.",
+      ],
+    },
+    {
+      title: "Spigot Plugin Developer",
+      company_name: "Rol Play server of the Universidad Nacional de Colombia in the video game Minecraft.",
+      icon: unServer,
+      iconBg: "#383E56",
+      date: "September 2022 - March 2023",
+      points: [
+        "I developed plugins using Java, Spigot, Bukkit and YML, optimizing the gameplay mechanics of the server. One of my outstanding achievements was the creation of an item on the server that replicates the functionalities of conventional smartphones. Through this implementation, I managed to provide an intuitive graphical interface for players to easily access the mechanics and interactions needed to enhance their gaming experience.",
       ],
     },
 ];
@@ -174,27 +178,23 @@ const experiences = [
 const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      name: "Nicolas Rodriguez",
+      designation: "Lead UI/UX Developer",
+      company: "Six Guys Productions",
+      image: nico,
+      hoverImage: linkedin,
+      link: "https://www.linkedin.com/in/nicolas-rodriguez-hilarion-765b321b3/",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      name: "Rodrigo Cantor",
+      designation: "Technical Leader",
+      company: "Six Guys Productions",
+      image: rodri,
+      hoverImage: linkedin,
+      link: "https://www.linkedin.com/in/rodrigo-cantor-vasquez-575770276/",
     },
 ];
   

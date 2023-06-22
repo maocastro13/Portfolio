@@ -31,6 +31,10 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import nico from "./ProfilePicsCo-workers/nico.jpg";
+import rodri from "./ProfilePicsCo-workers/rodri.jpg";
+import linkedin from "./ProfilePicsCo-workers/linkedin.png";
+
 export {
   logo,
   backend,
@@ -62,4 +66,8 @@ export {
   carrent,
   jobit,
   tripguide,
+
+  nico,
+  rodri,
+  linkedin,
 };
