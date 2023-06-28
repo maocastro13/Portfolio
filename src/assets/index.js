@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import itchio from "./itchio2.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -27,12 +28,14 @@ import colapsum from "./company/Colapsum.png";
 import unServer from "./company/UnMc.jpg";
 import sixGuys from "./company/sixGuys.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import theLastCrusade from "./theLastCrusade.png";
+import astroBear from "./astroBear.png";
+import skywaySavior from "./skywaySavior.png";
+import dontStopKiddo from "./dontStopKiddo.png";
 
 import nico from "./ProfilePicsCo-workers/nico.jpg";
 import rodri from "./ProfilePicsCo-workers/rodri.jpg";
+import chris from "./ProfilePicsCo-workers/chris.jpg";
 import linkedin from "./ProfilePicsCo-workers/linkedin.png";
 
 export {
@@ -42,8 +45,10 @@ export {
   mobile,
   web,
   github,
+  itchio,
   menu,
   close,
+
   agile,
   atlassian,
   bash,
@@ -63,11 +68,14 @@ export {
   colapsum,
   unServer,
   sixGuys,
-  carrent,
-  jobit,
-  tripguide,
+
+  theLastCrusade,
+  astroBear,
+  skywaySavior,
+  dontStopKiddo,
 
   nico,
   rodri,
+  chris,
   linkedin,
 };

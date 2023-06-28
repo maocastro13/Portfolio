@@ -3,6 +3,7 @@ import {
     backend,
     creator,
     web,
+
     Python,
     c,
     agile,
@@ -14,19 +15,25 @@ import {
     pm,
     git,
     bash,
+    threejs,
     atlassian,
     SolidPrinciples,
-    pp,
+   
+
     unServer,
     sixGuys,
     colapsum,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+    pp,
+
+    theLastCrusade,
+    astroBear,
+    skywaySavior,
+    dontStopKiddo,
+    
     
     nico,
     rodri,
+    chris,
     linkedin,
 } from "../assets";
   
@@ -170,7 +177,9 @@ const experiences = [
       iconBg: "#383E56",
       date: "September 2022 - March 2023",
       points: [
-        "I developed plugins using Java, Spigot, Bukkit and YML, optimizing the gameplay mechanics of the server. One of my outstanding achievements was the creation of an item on the server that replicates the functionalities of conventional smartphones. Through this implementation, I managed to provide an intuitive graphical interface for players to easily access the mechanics and interactions needed to enhance their gaming experience.",
+        "I developed plugins using Java, Spigot, Bukkit and YML, optimizing the gameplay mechanics of the server.",
+        "One of my outstanding achievements was the creation of an item on the server that replicates the functionalities of conventional smartphones.",
+        "Through this implementation, I managed to provide an intuitive graphical interface for players to easily access the mechanics and interactions needed to enhance their gaming experience.",
       ],
     },
 ];
@@ -196,71 +205,106 @@ const testimonials = [
       hoverImage: linkedin,
       link: "https://www.linkedin.com/in/rodrigo-cantor-vasquez-575770276/",
     },
+    {
+      testimonial:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      name: "Christian Ramirez",
+      designation: "Lead Engineer",
+      company: "Six Guys Productions",
+      image: chris,
+      hoverImage: linkedin,
+      link: "https://www.linkedin.com/in/christian-ramirez-ab9828135/",
+    },
 ];
   
 const projects = [
     {
-      name: "Car Rent",
+      name: "The Last Crusade",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "",
       tags: [
         {
-          name: "react",
+          name: "Unity",
           color: "blue-text-gradient",
         },
         {
-          name: "Githubdesktop",
+          name: "C#",
           color: "green-text-gradient",
         },
         {
-          name: "trello",
+          name: "Videogame Character Development",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: theLastCrusade,
+      source_code_linkgh: "https://github.com/Six-Guys-Productions-COL",
+      source_code_linkitch: "https://six-guys-productions.itch.io/the-last-crusade",
     },
     {
-      name: "Job IT",
+      name: "Astro Bear: Ameba's Interstellar Adventure",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "",
       tags: [
         {
-          name: "react",
+          name: "Unity",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "C#",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "GameJam UniSabana",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: astroBear,
+      source_code_linkgh: "https://github.com/GirotzuDev/GameJamUniSabana/tree/develop",
+      source_code_linkitch: "https://pixel-pioneers-col.itch.io/astro-bear",
     },
     {
-      name: "Trip Guide",
+      name: "Skyway Savior",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "",
       tags: [
         {
-          name: "nextjs",
+          name: "Unity",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "C#",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Generation",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: skywaySavior,
+      source_code_linkgh: "https://github.com/Grupo4JamGEN/Unity_Aerodeslizador/tree/main",
+      source_code_linkitch: "https://marlon-p.itch.io/skyway-savior",
+    },
+    {
+      name: "Don´t Stop Kiddo!",
+      description:
+        "",
+      tags: [
+        {
+          name: "Unity",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "C#",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Generation",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: dontStopKiddo,
+      source_code_linkgh: "https://github.com/maocastro13/GameJam1/tree/Dont-Stop-Kiddo-V0.0.1",
+      source_code_linkitch: "https://marlon-p.itch.io/dont-stop-kiddo-gamejamversion",
     },
 ];
   
