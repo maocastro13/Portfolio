@@ -1,12 +1,10 @@
-import React from "react";
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
-
 import "react-vertical-timeline-component/style.min.css";
-
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -34,12 +32,7 @@ const ExperienceCard = ({ experience }) => {
     >
       <div>
         <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
-        <p
-          className="text-secondary text-[16px] font-semibold"
-          style={{ margin: 0 }}
-        >
-          {experience.company_name}
-        </p>
+        <p className="text-secondary text-[16px] font-semibold">{experience.company_name}</p>
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
@@ -57,6 +50,17 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
       <div>
@@ -64,19 +68,14 @@ const Experience = () => {
           <p className={`${styles.sectionSubText} text-center`}>
             In what I have worked on and developed so far,
           </p>
-          <h2 className={`${styles.sectionHeadText} text-center`}>
-            Experience.
-          </h2>
+          <h2 className={`${styles.sectionHeadText} text-center`}>Experience.</h2>
         </motion.div>
       </div>
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
-            />
+            <ExperienceCard key={`experience-${index}`} experience={experience} />
           ))}
         </VerticalTimeline>
       </div>
