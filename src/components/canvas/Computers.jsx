@@ -5,8 +5,8 @@ import { Html, OrbitControls, useAnimations, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const [index, setIndex] = useState(2);
-  const computer = useGLTF("./Avatar/MaoAvatarAnimation.glb");
+  const [index, setIndex] = useState(0);
+  const computer = useGLTF("./Avatar/Mao.glb");
   const { actions, names } = useAnimations(computer.animations, computer.scene);
   const [isClicked, setIsClicked] = useState(false);
 
@@ -17,9 +17,9 @@ const Computers = ({ isMobile }) => {
     if (animationAction) {
       animationAction.reset().fadeIn(0.5).play();
 
-      const maxIterations = 4;
+      const maxIterations = 10;
       const animationDuration = animationAction.getClip().duration;
-      const framesPerSecond = 60;
+      const framesPerSecond = 120;
       const framesPerIteration = Math.floor(framesPerSecond * animationDuration);
       const frameDuration = 1 / framesPerSecond;
       const iterationDuration = framesPerIteration * frameDuration;
