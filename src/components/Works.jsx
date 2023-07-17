@@ -63,7 +63,7 @@ const ProjectCard = ({
 
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          {!isMobile && <p className="mt-2 text-secondary text-[14px]">{description}</p> || isMobile && <p className="mt-2 text-secondary text-[14px]">Watch this page from your computer and you will discover the secret!</p>}
+          {!isMobile && <p className="mt-2 text-secondary text-[14px]">{description}</p> || isMobile && <p></p>}
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
