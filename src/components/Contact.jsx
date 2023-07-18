@@ -1,11 +1,14 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { Tooltip } from 'react-tooltip';
 
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { technologies } from "../constants";
+import { FaLinkedin, FaInstagram, FaTiktok, FaWhatsapp, FaGithub, FaItchIo, FaFilePdf } from "react-icons/fa";
+import CV from "../assets/CV/CV_MAURICIO_CASTRO_14_07_23.pdf";
 
 const Contact = () => {
   const formRef = useRef();
@@ -63,31 +66,63 @@ const Contact = () => {
         }
       );
   };
-  const handleClick = () => {
-    window.location.href = 'https://linktr.ee/maocastro13dev';
+  const handleLinkedinClick = () => {
+    window.location.href = 'https://www.linkedin.com/';
+  };
+
+  const handleInstagramClick = () => {
+    window.location.href = 'https://www.instagram.com/';
+  };
+
+  const handleTiktokClick = () => {
+    window.location.href = 'https://www.tiktok.com/';
+  };
+
+  const handleWhatsappClick = () => {
+    window.location.href = 'https://web.whatsapp.com/';
+  };
+
+  const handleItchClick = () => {
+    window.location.href = 'https://itch.io/';
+  };
+
+  const handleGithubClick = () => {
+    window.location.href = 'https://github.com/';
+  };
+
+  const handleDownloadCVClick = () => {
+    const link = document.createElement('a');
+    link.href = CV;
+    link.download = 'CV_MAURICIO_CASTRO.pdf';
+    link.click();
   };
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <p
-          onClick={handleClick}  
-          className={styles.sectionSubText}
-          style={{ cursor: 'pointer'}}>
-            Click here to see all my networks!
-        </p>
+        <div className="flex justify-left gap-6 mt-8">
+          <FaLinkedin onClick={handleLinkedinClick} className="text-3xl text-white cursor-pointer" />
+          <FaGithub onClick={handleGithubClick} className="text-3xl text-white cursor-pointer" />
+          <FaItchIo onClick={handleItchClick} className="text-3xl text-white cursor-pointer" />
+          <FaWhatsapp onClick={handleWhatsappClick} className="text-3xl text-white cursor-pointer" />
+          <FaInstagram onClick={handleInstagramClick} className="text-3xl text-white cursor-pointer" />
+          <FaTiktok onClick={handleTiktokClick} className="text-3xl text-white cursor-pointer" />
+          <FaFilePdf
+            onClick={handleDownloadCVClick}
+            className="text-3xl text-white cursor-pointer"
+            data-tooltip-id="cv-tooltip" 
+            data-tooltip-content="Click here to download my CV!"
+            data-tooltip-variant="light"
+            id="cv-element"
+          />
+          <Tooltip id="cv-tooltip" anchorSelect="#cv-element"/>
+        </div>
         <h3 className={styles.sectionHeadText}>Contact me!</h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
-        >
+        <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
@@ -133,9 +168,17 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px] bg-black-100 p-8 rounded-2xl'
       >
-        <EarthCanvas />
+        <p className={`${styles.sectionHeadText}`}>My Tech Stack</p>
+        <br />
+        <div className='flex flex-row flex-wrap justify-center gap-10'>
+          {technologies.map((technology) => (
+            <div className='w-28 h-28' key={technology.name}>
+              <img src={technology.icon} alt={technology.name} />
+            </div>
+          ))}
+        </div>
       </motion.div>
     </div>
   );

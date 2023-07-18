@@ -43,25 +43,22 @@ export const navLinks = [
       title: "About",
     },
     {
-      id: "experience",
-      title: "Experience",
-    },
-    {
-      id: "tech",
-      title: "Tech",
-    },
-    {
       id: "works",
       title: "Works",
-    },
-    {
-      id: "feedbacks",
-      title: "Feedbacks",
     },
     {
       id: "contact",
       title: "Contact",
     },
+    {
+      id: "experience",
+      title: "Experience",
+    },
+    {
+      id: "feedbacks",
+      title: "Feedbacks",
+    },
+    
 ];
   
 const services = [
@@ -89,56 +86,48 @@ const technologies = [
       icon: c,
     },
     {
-      name: "agile",
-      icon: agile,
-    },
-    {
-      name: "python",
-      icon: Python,
-    },
-    {
       name: "unity",
       icon: unity,
-    },
-    {
-      name: "vsc",
-      icon: vsc,
-    },
-    {
-      name: "trello",
-      icon: trello,
     },
     {
       name: "java",
       icon: java,
     },
     {
-      name: "Githubdesktop",
-      icon: Githubdesktop,
+      name: "python",
+      icon: Python,
     },
     {
       name: "Three JS",
       icon: threejs,
     },
     {
+      name: "bash",
+      icon: bash,
+    },
+    {
       name: "git",
       icon: git,
     },
     {
-      name: "bash",
-      icon: bash,
+      name: "vsc",
+      icon: vsc,
+    },
+    {
+      name: "agile",
+      icon: agile,
     },
     {
       name: "atlassian",
       icon: atlassian,
     },
     {
-      name: "SolidPrinciples",
-      icon: SolidPrinciples,
-    },
-    {
       name: "pm",
       icon: pm,
+    },
+    {
+      name: "SolidPrinciples",
+      icon: SolidPrinciples,
     },
 ];
   
