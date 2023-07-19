@@ -7,7 +7,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { technologies } from "../constants";
-import { FaLinkedin, FaInstagram, FaTiktok, FaWhatsapp, FaGithub, FaItchIo, FaFilePdf } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaWhatsapp, FaGithub, FaItchIo, FaFilePdf } from "react-icons/fa";
 import CV from "../assets/CV/CV_MAURICIO_CASTRO_14_07_23.pdf";
 
 const Contact = () => {
@@ -67,27 +67,27 @@ const Contact = () => {
       );
   };
   const handleLinkedinClick = () => {
-    window.location.href = 'https://www.linkedin.com/';
+    window.open('https://www.linkedin.com/in/maocastro13/', '_blank');
   };
-
+  
   const handleInstagramClick = () => {
-    window.location.href = 'https://www.instagram.com/';
+    window.open('https://www.instagram.com/maocastro13dev/', '_blank');
   };
-
-  const handleTiktokClick = () => {
-    window.location.href = 'https://www.tiktok.com/';
-  };
-
+  
+  /*const handleTiktokClick = () => {
+    window.open('https://www.tiktok.com/@maocastro13dev', '_blank');
+  };*/
+  
   const handleWhatsappClick = () => {
-    window.location.href = 'https://web.whatsapp.com/';
+    window.open('https://wa.me/573012037742', '_blank');
   };
-
+  
   const handleItchClick = () => {
-    window.location.href = 'https://itch.io/';
+    window.open('https://maocastro13.itch.io', '_blank');
   };
-
+  
   const handleGithubClick = () => {
-    window.location.href = 'https://github.com/';
+    window.open('https://github.com/maocastro13', '_blank');
   };
 
   const handleDownloadCVClick = () => {
@@ -104,21 +104,55 @@ const Contact = () => {
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <div className="flex justify-left gap-6 mt-8">
-          <FaLinkedin onClick={handleLinkedinClick} className="text-3xl text-white cursor-pointer" />
-          <FaGithub onClick={handleGithubClick} className="text-3xl text-white cursor-pointer" />
-          <FaItchIo onClick={handleItchClick} className="text-3xl text-white cursor-pointer" />
-          <FaWhatsapp onClick={handleWhatsappClick} className="text-3xl text-white cursor-pointer" />
-          <FaInstagram onClick={handleInstagramClick} className="text-3xl text-white cursor-pointer" />
-          <FaTiktok onClick={handleTiktokClick} className="text-3xl text-white cursor-pointer" />
+          <FaLinkedin 
+            onClick={handleLinkedinClick} 
+            className="text-3xl text-white cursor-pointer"
+            data-tooltip-id="contact-tooltip" 
+            data-tooltip-content="See my LinkedIn"
+            data-tooltip-variant="light"
+            id="contact-element" 
+          />
+          <FaGithub 
+            onClick={handleGithubClick} 
+            className="text-3xl text-white cursor-pointer"
+            data-tooltip-id="contact-tooltip" 
+            data-tooltip-content="See my Github"
+            data-tooltip-variant="light"
+            id="contact-element" 
+          />
+          <FaItchIo 
+            onClick={handleItchClick} 
+            className="text-3xl text-white cursor-pointer"
+            data-tooltip-id="contact-tooltip" 
+            data-tooltip-content="See my Itch.io"
+            data-tooltip-variant="light"
+            id="contact-element" 
+          />
+          <FaWhatsapp 
+            onClick={handleWhatsappClick} 
+            className="text-3xl text-white cursor-pointer"
+            data-tooltip-id="contact-tooltip" 
+            data-tooltip-content="Send me a message"
+            data-tooltip-variant="light"
+            id="contact-element"
+          />
+          <FaInstagram 
+            onClick={handleInstagramClick} 
+            className="text-3xl text-white cursor-pointer"
+            data-tooltip-id="contact-tooltip" 
+            data-tooltip-content="See my Instagram"
+            data-tooltip-variant="light"
+            id="contact-element" 
+          /> 
           <FaFilePdf
             onClick={handleDownloadCVClick}
             className="text-3xl text-white cursor-pointer"
-            data-tooltip-id="cv-tooltip" 
+            data-tooltip-id="contact-tooltip" 
             data-tooltip-content="Click here to download my CV!"
             data-tooltip-variant="light"
-            id="cv-element"
+            id="contact-element"
           />
-          <Tooltip id="cv-tooltip" anchorSelect="#cv-element"/>
+          <Tooltip id="contact-tooltip" anchorSelect="#contact-element"/>
         </div>
         <h3 className={styles.sectionHeadText}>Contact me!</h3>
 
@@ -168,13 +202,13 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px] bg-black-100 p-8 rounded-2xl'
+        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px] bg-black-100 p-8 rounded-2xl flex-shrink-0 w-full'
       >
         <p className={`${styles.sectionHeadText}`}>My Tech Stack</p>
         <br />
-        <div className='flex flex-row flex-wrap justify-center gap-10'>
+        <div className='flex flex-row flex-wrap justify-center md:justify-center gap-4 md:gap-10'>
           {technologies.map((technology) => (
-            <div className='w-28 h-28' key={technology.name}>
+            <div className='w-12 h-12 md:w-28 md:h-28' key={technology.name}>
               <img src={technology.icon} alt={technology.name} />
             </div>
           ))}
