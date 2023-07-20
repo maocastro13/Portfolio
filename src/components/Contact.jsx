@@ -103,6 +103,7 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
+        <h1 className={styles.sectionHeadText}>Contact me!</h1>
         <div className="flex justify-left gap-6 mt-8">
           <FaLinkedin 
             onClick={handleLinkedinClick} 
@@ -154,7 +155,10 @@ const Contact = () => {
           />
           <Tooltip id="contact-tooltip" anchorSelect="#contact-element"/>
         </div>
-        <h3 className={styles.sectionHeadText}>Contact me!</h3>
+        <br/>
+        <p className={styles.sectionSubText}>👆🏻 My social networks and my CV.</p>
+        <br/>
+        <p className={styles.sectionSubText}>👇🏻 Or you can send me a email.</p> 
 
         <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
           <label className='flex flex-col'>

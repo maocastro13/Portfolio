@@ -71,7 +71,7 @@ const services = [
       icon: mobile,
     },
     {
-      title: "AI Promt Developer",
+      title: "AI Prompt Developer",
       icon: backend,
     },
     {
@@ -86,16 +86,8 @@ const technologies = [
       icon: c,
     },
     {
-      name: "unity",
-      icon: unity,
-    },
-    {
       name: "java",
       icon: java,
-    },
-    {
-      name: "python",
-      icon: Python,
     },
     {
       name: "Three JS",
@@ -106,16 +98,28 @@ const technologies = [
       icon: bash,
     },
     {
-      name: "git",
-      icon: git,
-    },
-    {
       name: "vsc",
       icon: vsc,
     },
     {
+      name: "git",
+      icon: git,
+    },
+    {
+      name: "unity",
+      icon: unity,
+    },
+    {
+      name: "SolidPrinciples",
+      icon: SolidPrinciples,
+    },
+    {
       name: "agile",
       icon: agile,
+    },
+    {
+      name: "python",
+      icon: Python,
     },
     {
       name: "atlassian",
@@ -124,10 +128,6 @@ const technologies = [
     {
       name: "pm",
       icon: pm,
-    },
-    {
-      name: "SolidPrinciples",
-      icon: SolidPrinciples,
     },
 ];
   
