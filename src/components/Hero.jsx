@@ -19,8 +19,8 @@ const Hero = ({ isMobile }) => {
             Hi, I'm <span className='text-[#915EFF]'>Mauricio</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I am a programmer of video games, <br className='sm:block hidden' />
-              VR and AR experiences and back-end solutions.
+              I am a Game Programmer, <br className='sm:block hidden' />
+              Unity Developer and VR & AR Developer.
           </p>
         </div>
       </div>

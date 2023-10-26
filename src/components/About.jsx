@@ -47,11 +47,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[21px] max-w-6xl leading-[30px]'
       >
-        I am a Game Developer and a Software Engineering Student. 
-        My greatest strength is my critical and analytical thinking, 
-        which allows me to create relevant solutions to requirements and problems that arise during development. 
-        In addition, I combine my skills with knowledge in Agile methodology, Git, and creating precise instructions for 
-        artificial intelligence, such as GPT, which allows me to be very efficient in my tasks.
+        Highly skilled and passionate Game Programmer with a deep understanding of software development, 
+        game programming, and the Unity game engine. A dedicated professional with a strong track record 
+        in delivering outstanding results in the field of video game development. 
+        Committed to optimizing game mechanics, enhancing player experiences, and leading successful projects.
+
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

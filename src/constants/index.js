@@ -63,19 +63,19 @@ export const navLinks = [
   
 const services = [
     {
-      title: "Game Developer",
+      title: "Game Programmer",
       icon: web,
     },
     {
-      title: "Software Engineer",
+      title: "Unity Developer",
       icon: mobile,
     },
     {
-      title: "AI Prompt Developer",
+      title: "VR & AR Developer",
       icon: backend,
     },
     {
-      title: "Backend Developer",
+      title: "Software Engineer",
       icon: creator,
     },
 ];
@@ -133,11 +133,11 @@ const technologies = [
   
 const experiences = [
     {
-      title: "Project Leader and Game Developer",
+      title: "Project Manager & Game Developer",
       company_name: "Six Guys Productions",
       icon: sixGuys,
       iconBg: "#000000",
-      date: "May 2023 - Actuality",
+      date: "May 2023 - June 2023",
       points: [
         "Led and managed multidisciplinary team for Generation Colombia Bootcamp's 'Unity Developer' final project.",
         "Implemented Agile methodology and Scrum framework for effective team collaboration.",
@@ -156,7 +156,7 @@ const experiences = [
       ],
     },
     {
-      title: "Proyect Manager and Programmer Lead",
+      title: "Project Manager & Programmer Lead",
       company_name: "Pixel Pioneers",
       icon: pp,
       iconBg: "#E6DEDD",
@@ -174,7 +174,7 @@ const experiences = [
       ],
     },
     {
-      title: "Game Programmer and Proyect Manager",
+      title: "Project Manager & Game Developer",
       company_name: "Colapsum Studio",
       icon: colapsum,
       iconBg: "#1A0C0D",

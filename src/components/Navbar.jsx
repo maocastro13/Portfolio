@@ -25,7 +25,7 @@ const Navbar = () => {
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Mauricio Castro&nbsp;
             <span className="sm:block hidden">
-            | Game Developer </span>
+            | Game Programmer </span>
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
