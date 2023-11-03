@@ -27,6 +27,10 @@ import pp from "./company/pp.png";
 import colapsum from "./company/Colapsum.png";
 import unServer from "./company/UnMc.jpg";
 import sixGuys from "./company/sixGuys.png";
+import bmp from "./company/bmp.jpeg";
+import immersiveLevel from "./company/ImmersiveLevel.png";
+import pik2 from "./company/pik2.png";
+
 
 import theLastCrusade from "./theLastCrusade.png";
 import astroBear from "./astroBear.png";
@@ -68,6 +72,9 @@ export {
   colapsum,
   unServer,
   sixGuys,
+  bmp,
+  immersiveLevel,
+  pik2,
 
   theLastCrusade,
   astroBear,

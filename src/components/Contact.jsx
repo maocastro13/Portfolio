@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { technologies } from "../constants";
 import { FaLinkedin, FaInstagram, FaWhatsapp, FaGithub, FaItchIo, FaFilePdf } from "react-icons/fa";
-import CV from "../assets/CV/CV_MAURICIO_CASTRO_14_07_23.pdf";
+import CV from "../assets/CV/CV_Mauricio_Castro_Game_Programmer.pdf";
 
 const Contact = () => {
   const formRef = useRef();
