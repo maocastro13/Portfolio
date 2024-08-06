@@ -29,6 +29,8 @@ import unServer from "./company/UnMc.jpg";
 import sixGuys from "./company/sixGuys.png";
 import bmp from "./company/bmp.jpeg";
 import immersiveLevel from "./company/ImmersiveLevel.png";
+import teriunGames from "./company/TeriunGames.png";
+import generation from "./company/generation.png";
 import pik2 from "./company/pik2.png";
 
 
@@ -74,7 +76,9 @@ export {
   sixGuys,
   bmp,
   immersiveLevel,
+  teriunGames,
   pik2,
+  generation,
 
   theLastCrusade,
   astroBear,
